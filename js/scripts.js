@@ -1,4 +1,4 @@
-import jsonData from '../card_data_json' assert { type: 'json' };
+import jsonData from '../card_data_json' with { type: 'json' };
 console.log("potato");
 
 console.log(jsonData[0]);
