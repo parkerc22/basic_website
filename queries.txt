@@ -1,0 +1,88 @@
+t:sorcery|Is your card a sorcery?
+t:instant|Is your card an instant?
+t:planeswalker|Is your card a planeswalker?
+t:creature|Is your card a creature?
+t:land|Is your card a land?
+t:artifact|Is your card an artifact?
+t:legendary|Is your card legendary?
+t:snow|Is your card snow?
+t:locus|Is your card a locus?
+mv=0|Does your card have a mana value of 0?
+mv=1|Does your card have a mana value of 1?
+mv=2|Does your card have a mana value of 2?
+mv=3|Does your card have a mana value of 3?
+mv=4|Does your card have a mana value of 4?
+mv=5|Does your card have a mana value of 5?
+mv=6|Does your card have a mana value of 6?
+mv=7|Does your card have a mana value of 7?
+mv=8|Does your card have a mana value of 8?
+mv=9|Does your card have a mana value of 9?
+mv<2|Does your card have a mana value less than 2?
+mv<3|Does your card have a mana value less than 3?
+mv<4|Does your card have a mana value less than 4?
+mv<5|Does your card have a mana value less than 5?
+mv<6|Does your card have a mana value less than 6?
+mv<7|Does your card have a mana value less than 7?
+mv>1|Does your card have a mana value greater than 1?
+mv>2|Does your card have a mana value greater than 2?
+mv>3|Does your card have a mana value greater than 3?
+mv>4|Does your card have a mana value greater than 4?
+mv>5|Does your card have a mana value greater than 5?
+c:w|Is your card white?
+c:u|Is your card blue?
+c:b|Is your card black?
+c:r|Is your card red?
+c:g|Is your card green?
+ci:w|Does your card's color identity include white?
+ci:u|Does your card's color identity include blue?
+ci:b|Does your card's color identity include black?
+ci:r|Does your card's color identity include red?
+ci:g|Does your card's color identity include green?
+legal:legacy|Is your card legal in Legacy?
+colors=2|Does your card have exactly two colors?
+colors=1|Does your card have exactly one color?
+colors=0|Is your card colorless?
+t:elemental|Is your card an Elemental?
+t:human|Is your card a Human?
+t:wizard|Is your card a Wizard?
+t:equipment|Is your card an Equipment?
+o:"draw"|Does your card mention the word "draw"?
+o:"whenever"|Does your card mention the word "whenever"?
+o:"exile"|Does your card mention exile?
+o:"devotion"|Does your card mention devotion?
+OR$t:planeswalker$t:creature$t:battle$t:land$t:enchantment$t:artifact|Is your card a permanent?
+OR$mv=1$mv=2|Does your card have a mana value of 1 or 2?
+AND$t:legendary$t:creature|Is your card a legendary creature?
+keywords:haste|Does your card have haste?
+keywords:lifelink|Does your card have lifelink?
+o:"+1/+1"|Does your card mention +1/+1?
+power=0|Does your card have a power of 0?
+power=1|Does your card have a power of 1?
+power=2|Does your card have a power of 2?
+power=3|Does your card have a power of 3?
+power=4|Does your card have a power of 4?
+power=5|Does your card have a power of 5?
+power=6|Does your card have a power of 6?
+power=7|Does your card have a power of 7?
+toughness=0|Does your card have a toughness of 0?
+toughness=1|Does your card have a toughness of 1?
+toughness=2|Does your card have a toughness of 2?
+toughness=3|Does your card have a toughness of 3?
+toughness=4|Does your card have a toughness of 4?
+toughness=5|Does your card have a toughness of 5?
+toughness=6|Does your card have a toughness of 6?
+toughness=7|Does your card have a toughness of 7?
+inset:mh3|Was your card printed in Modern Horizons 3?
+inset:mh2|Was your card printed in Modern Horizons 2?
+inset:mh1|Was your card printed in Modern Horizons 1?
+inset:tmp|Was your card printed in Tempest?
+inset:mmq|Was your card printed in Mercadian Masques?
+inset:lea|Was your card printed in Alpha?
+inset:tsp|Was your card printed in Time Spiral?
+inset:cmr|Was your card printed in Commander Legends?
+inset:lci|Was your card printed in Lost Caverns of Ixalan?
+inset:soi|Was your card printed in Shadows Over Innistrad?
+inset:emn|Was your card printed in Eldritch Moon?
+firstprintyear<2010|Was your card first printed before 2010?
+firstprintyear<2000|Was your card first printed before 2000?
+firstprintyear<2020|Was your card first printed before 2020?
