@@ -1,8 +1,26 @@
 body {
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 40px;
-    background-color: #f4f4f4;
+    background-color: #fcdac6;
+    font-size: 20px;
 }
 h1 {
     color: #333;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.yes {
+    background-color:green;
+}
+.no {
+    background-color: red;
 }

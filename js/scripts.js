@@ -22,14 +22,18 @@ async function startGame() {
     //2. load queries (this really should be a json
     console.log("starting...");
     const numLeft = document.getElementById("numLeft");
-    numLeft.textContent = "Number of cards left: 35205";
+    numLeft.textContent = "Number of cards left: 32635";
 
     let queries = [];
     let prompts = [];
+    let qtypes = [];
     queryRaw.split("\n").forEach((line, idx) => {
         queries.push(line.split('|')[0]);
         prompts.push(line.split('|')[1]);
+        qtypes.push(line.split('|')[2]);
     });
+
+    let prev_qtype = "";
 
     //3. populate possible cards (all of them)
     let possibleCards = Object.keys(jsonData);
@@ -42,6 +46,7 @@ async function startGame() {
         let best_min = [];
         let best_idx = [];
         for (let i = 0; i < queries.length; i++) {
+            //make sure we don't reuse a prompt of the same type we just had
             let one_ct = 0;
             for (let c = 0; c < possibleCards.length; c++) {
                 if (jsonData[possibleCards[c]][i] == 1) {
@@ -69,7 +74,8 @@ async function startGame() {
         }
 
         //8. Randomly choose a query and print it
-        let final_idx = weightedRandom(best_min, best_idx);
+        let final_idx = weightedRandom(best_min, best_idx, prev_qtype, qtypes);
+        prev_qtype = qtypes[final_idx];
         pghElement.textContent = prompts[final_idx];
 
         //9. Receive user input
@@ -116,8 +122,13 @@ const button1 = document.getElementById("startGame");
 // Add a 'click' event listener to the button
 button1.addEventListener("click", startGame);
 
-function weightedRandom(weights, items) {
+function weightedRandom(weights, items, prevType, qtypes) {
     let i;
+    for (i = 1; i < weights.length; i++) {
+        if (qtypes[i]===prevType) {
+            weights[i] *= 0.15;
+        }
+    }
     for (i = 1; i < weights.length; i++)
         weights[i] += weights[i - 1];
     

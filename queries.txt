@@ -1,151 +1,151 @@
-t:sorcery|Is your card a sorcery?
-t:instant|Is your card an instant?
-t:planeswalker|Is your card a planeswalker?
-t:creature|Is your card a creature?
-t:land|Is your card a land?
-t:artifact|Is your card an artifact?
-t:battle|Is your card a battle?
-t:legendary|Is your card legendary?
-t:conspiracy|Is your card a Conspiracy?
-t:snow|Is your card snow?
-t:locus|Is your card a locus?
-mv=0|Does your card have a mana value of 0?
-mv=1|Does your card have a mana value of 1?
-mv=2|Does your card have a mana value of 2?
-mv=3|Does your card have a mana value of 3?
-mv=4|Does your card have a mana value of 4?
-mv=5|Does your card have a mana value of 5?
-mv=6|Does your card have a mana value of 6?
-mv=7|Does your card have a mana value of 7?
-mv=8|Does your card have a mana value of 8?
-mv=9|Does your card have a mana value of 9?
-mv<2|Does your card have a mana value less than 2?
-mv<3|Does your card have a mana value less than 3?
-mv<4|Does your card have a mana value less than 4?
-mv<5|Does your card have a mana value less than 5?
-mv<6|Does your card have a mana value less than 6?
-mv<7|Does your card have a mana value less than 7?
-mv>1|Does your card have a mana value greater than 1?
-mv>2|Does your card have a mana value greater than 2?
-mv>3|Does your card have a mana value greater than 3?
-mv>4|Does your card have a mana value greater than 4?
-mv>5|Does your card have a mana value greater than 5?
-c:w|Is your card white?
-c:u|Is your card blue?
-c:b|Is your card black?
-c:r|Is your card red?
-c:g|Is your card green?
-ci:w|Does your card's color identity include white?
-ci:u|Does your card's color identity include blue?
-ci:b|Does your card's color identity include black?
-ci:r|Does your card's color identity include red?
-ci:g|Does your card's color identity include green?
-OR$c:r$c:u|Is your card red or blue at all?
-OR$c:g$c:b|Is your card green or black at all?
-OR$ci:w$ci:u|Does your card's color identity include blue or white at all?
-OR$ci:r$ci:g|Does your card's color identity include red or green at all?
-legal:legacy|Is your card legal in Legacy?
-legal:pauper|Is your card legal in Pauper?
-legal:modern|Is your card legal in Modern?
-legal:pioneer|Is your card legal in Pioneer?
-colors=5|Is your card all five colors?
-colors=3|Does your card have exactly three colors?
-colors=2|Does your card have exactly two colors?
-colors=1|Does your card have exactly one color?
-colors=0|Is your card colorless?
-t:elemental|Is your card an Elemental?
-t:human|Is your card a Human?
-t:wizard|Is your card a Wizard?
-t:equipment|Is your card an Equipment?
-t:tower|Is your card a Tower?
-t:power-plant|Is your card a Power-Plant?
-t:desert|Is your card a Desert?
-t:aura|Is your card an Aura?
-t:saga|Is your card a Saga?
-o:"draw"|Does your card mention the word "draw"?
-o:"whenever"|Does your card mention the word "whenever"?
-o:"exile"|Does your card mention exile?
-o:"devotion"|Does your card mention devotion?
-o:"destroy target"|Could your card 'destroy' a permanent?
-o:"tap target"|Could your card tap a permanent?
-o:"discard"|Does your card mention discard?
-OR$t:planeswalker$t:creature$t:battle$t:land$t:enchantment$t:artifact|Is your card a permanent?
-OR$mv=1$mv=2|Does your card have a mana value of 1 or 2?
-AND$t:legendary$t:creature|Is your card a legendary creature?
-keywords:haste|Does your card have haste?
-keywords:lifelink|Does your card have lifelink?
-keywords:flying|Does your card have flying?
-keywords:trample|Does your card have trample?
-keywords:deathtouch|Does your card have deathtouch?
-keywords:menace|Does your card have menace?
-keywords:suspend|Does your card have suspend?
-keywords:unearth|Does your card have unearth?
-keywords:echo|Does your card have echo?
-keywords:indestructible|Does your card have indestructible?
-keywords:sweep|Does your card have sweep?
-o:"pay 1 life"|Could your card cause you to pay exactly 1 life?
-o:"gain 1 life"|Could your card cause you to gain exactly 1 life?
-o:"target opponent"|Could your card target an opponent?
-o:"+1/+1"|Does your card mention +1/+1?
-o:"-1/-1"|Does your card mention -1/-1?
-o:"-2/-2"|Does your card mention -2/-2?
-o:"add {C}"|Could this card add colorless mana to your mana pool?
-o:"eldrazi"|Does your card mention Eldrazi at all?
-o:"zombie"|Does your card mention Zombies at all?
-o:"goblin"|Does your card mention Goblins at all?
-o:"sliver"|Does your card mention Slivers at all?
-o:"until end of turn"|Does your card do something 'until end of turn'?
-o:"this land enters tapped"|Is your card a land card that could enter tapped?
-o:"When this creature enters"|Is your card a creature card with an ETB?
-keywords:cumulative upkeep|Does your card have Cumulative upkeep?
-keywords:proliferate|Does your card have Proliferate?
-keywords:bolster|Does your card have Bolster?
-o:"scry 1"|Does your card mention "scry 1"?
-o:"counter"|Does your card mention "counter" at all?
-o:"sacrifice a creature"|Could your card cause you to sacrifice exactly one creature?
-power=0|Does your card have a power of 0?
-power=1|Does your card have a power of 1?
-power=2|Does your card have a power of 2?
-power=3|Does your card have a power of 3?
-power=4|Does your card have a power of 4?
-power=5|Does your card have a power of 5?
-power=6|Does your card have a power of 6?
-power=7|Does your card have a power of 7?
-toughness=0|Does your card have a toughness of 0?
-toughness=1|Does your card have a toughness of 1?
-toughness=2|Does your card have a toughness of 2?
-toughness=3|Does your card have a toughness of 3?
-toughness=4|Does your card have a toughness of 4?
-toughness=5|Does your card have a toughness of 5?
-toughness=6|Does your card have a toughness of 6?
-toughness=7|Does your card have a toughness of 7?
-inset:mh3|Was your card printed in Modern Horizons 3?
-inset:mh2|Was your card printed in Modern Horizons 2?
-inset:mh1|Was your card printed in Modern Horizons 1?
-inset:tmp|Was your card printed in Tempest?
-inset:mmq|Was your card printed in Mercadian Masques?
-inset:lea|Was your card printed in Alpha?
-inset:tsp|Was your card printed in Time Spiral?
-inset:cmr|Was your card printed in Commander Legends?
-inset:lci|Was your card printed in Lost Caverns of Ixalan?
-inset:soi|Was your card printed in Shadows Over Innistrad?
-inset:emn|Was your card printed in Eldritch Moon?
-inset:zen|Was your card printed in Zendikar?
-inset:scg|Was your card printed in Scourge?
-inset:ima|Was your card printed in Iconic Masters?
-inset:aer|Was your card printed in Aether Revolt?
-inset:wwk|Was your card printed in Worldwake?
-inset:leg|Was your card printed in Legends?
-inset:drk|Was your card printed in The Dark?
-inset:fut|Was your card printed in Future Sight?
-inset:bro|Was your card printed in The Brothers' War?
-inset:mom|Was your card printed in March of the Machine?
-inset:con|Was your card printed in Conflux?
-inset:rav|Was your card printed in Ravnica: City of Guilds?
-inset:dis|Was your card printed in Dissension?
-inset:gpt|Was your card printed in Guildpact?
-inset:vis|Was your card printed in Visions?
-inset:uma|Was your card printed in Ultimate Masters?
-firstprintyear<2010|Was your card first printed before 2010?
-firstprintyear<2000|Was your card first printed before 2000?
-firstprintyear<2020|Was your card first printed before 2020?
+t:sorcery|Is your card a sorcery?|type
+t:instant|Is your card an instant?|type
+t:planeswalker|Is your card a planeswalker?|type
+t:creature|Is your card a creature?|type
+t:land|Is your card a land?|type
+t:artifact|Is your card an artifact?|type
+t:battle|Is your card a battle?|type
+t:legendary|Is your card legendary?|type
+t:conspiracy|Is your card a Conspiracy?|type
+t:snow|Is your card snow?|type
+t:locus|Is your card a locus?|type
+mv=0|Does your card have a mana value of 0?|mv
+mv=1|Does your card have a mana value of 1?|mv
+mv=2|Does your card have a mana value of 2?|mv
+mv=3|Does your card have a mana value of 3?|mv
+mv=4|Does your card have a mana value of 4?|mv
+mv=5|Does your card have a mana value of 5?|mv
+mv=6|Does your card have a mana value of 6?|mv
+mv=7|Does your card have a mana value of 7?|mv
+mv=8|Does your card have a mana value of 8?|mv
+mv=9|Does your card have a mana value of 9?|mv
+mv<2|Does your card have a mana value less than 2?|mv
+mv<3|Does your card have a mana value less than 3?|mv
+mv<4|Does your card have a mana value less than 4?|mv
+mv<5|Does your card have a mana value less than 5?|mv
+mv<6|Does your card have a mana value less than 6?|mv
+mv<7|Does your card have a mana value less than 7?|mv
+mv>1|Does your card have a mana value greater than 1?|mv
+mv>2|Does your card have a mana value greater than 2?|mv
+mv>3|Does your card have a mana value greater than 3?|mv
+mv>4|Does your card have a mana value greater than 4?|mv
+mv>5|Does your card have a mana value greater than 5?|mv
+c:w|Is your card white?|color
+c:u|Is your card blue?|color
+c:b|Is your card black?|color
+c:r|Is your card red?|color
+c:g|Is your card green?|color
+ci:w|Does your card's color identity include white?|color
+ci:u|Does your card's color identity include blue?|color
+ci:b|Does your card's color identity include black?|color
+ci:r|Does your card's color identity include red?|color
+ci:g|Does your card's color identity include green?|color
+OR$c:r$c:u|Is your card red or blue at all?|color
+OR$c:g$c:b|Is your card green or black at all?|color
+OR$ci:w$ci:u|Does your card's color identity include blue or white at all?|color
+OR$ci:r$ci:g|Does your card's color identity include red or green at all?|color
+legal:legacy|Is your card legal in Legacy?|format
+legal:pauper|Is your card legal in Pauper?|format
+legal:modern|Is your card legal in Modern?|format
+legal:pioneer|Is your card legal in Pioneer?|format
+colors=5|Is your card all five colors?|color
+colors=3|Does your card have exactly three colors?|color
+colors=2|Does your card have exactly two colors?|color
+colors=1|Does your card have exactly one color?|color
+colors=0|Is your card colorless?|color
+t:elemental|Is your card an Elemental?|type
+t:human|Is your card a Human?|type
+t:wizard|Is your card a Wizard?|type
+t:equipment|Is your card an Equipment?|type
+t:tower|Is your card a Tower?|type
+t:power-plant|Is your card a Power-Plant?|type
+t:desert|Is your card a Desert?|type
+t:aura|Is your card an Aura?|type
+t:saga|Is your card a Saga?|type
+o:"draw"|Does your card mention the word "draw"?|oracle
+o:"whenever"|Does your card mention the word "whenever"?|oracle
+o:"exile"|Does your card mention exile?|oracle
+o:"devotion"|Does your card mention devotion?|oracle
+o:"destroy target"|Could your card 'destroy' a permanent?|oracle
+o:"tap target"|Could your card tap a permanent?|oracle
+o:"discard"|Does your card mention discard?|oracle
+OR$t:planeswalker$t:creature$t:battle$t:land$t:enchantment$t:artifact|Is your card a permanent?|type
+OR$mv=1$mv=2|Does your card have a mana value of 1 or 2?|mv
+AND$t:legendary$t:creature|Is your card a legendary creature?|type
+keywords:haste|Does your card have haste?|oracle
+keywords:lifelink|Does your card have lifelink?|oracle
+keywords:flying|Does your card have flying?|oracle
+keywords:trample|Does your card have trample?|oracle
+keywords:deathtouch|Does your card have deathtouch?|oracle
+keywords:menace|Does your card have menace?|oracle
+keywords:suspend|Does your card have suspend?|oracle
+keywords:unearth|Does your card have unearth?|oracle
+keywords:echo|Does your card have echo?|oracle
+keywords:indestructible|Does your card have indestructible?|oracle
+keywords:sweep|Does your card have sweep?|oracle
+o:"pay 1 life"|Could your card cause you to pay exactly 1 life?|oracle
+o:"gain 1 life"|Could your card cause you to gain exactly 1 life?|oracle
+o:"target opponent"|Could your card target an opponent?|oracle
+o:"+1/+1"|Does your card mention +1/+1?|oracle
+o:"-1/-1"|Does your card mention -1/-1?|oracle
+o:"-2/-2"|Does your card mention -2/-2?|oracle
+o:"add {C}"|Could this card add colorless mana to your mana pool?|oracle
+o:"eldrazi"|Does your card mention Eldrazi at all?|oracle
+o:"zombie"|Does your card mention Zombies at all?|oracle
+o:"goblin"|Does your card mention Goblins at all?|oracle
+o:"sliver"|Does your card mention Slivers at all?|oracle
+o:"until end of turn"|Does your card do something 'until end of turn'?|oracle
+o:"this land enters tapped"|Is your card a land card that could enter tapped?|oracle
+o:"When this creature enters"|Is your card a creature card with an ETB?|oracle
+keywords:cumulative upkeep|Does your card have Cumulative upkeep?|oracle
+keywords:proliferate|Does your card have Proliferate?|oracle
+keywords:bolster|Does your card have Bolster?|oracle
+o:"scry 1"|Does your card mention "scry 1"?|oracle
+o:"counter"|Does your card mention "counter" at all?|oracle
+o:"sacrifice a creature"|Could your card cause you to sacrifice exactly one creature?|oracle
+power=0|Does your card have a power of 0?|stats
+power=1|Does your card have a power of 1?|stats
+power=2|Does your card have a power of 2?|stats
+power=3|Does your card have a power of 3?|stats
+power=4|Does your card have a power of 4?|stats
+power=5|Does your card have a power of 5?|stats
+power=6|Does your card have a power of 6?|stats
+power=7|Does your card have a power of 7?|stats
+toughness=0|Does your card have a toughness of 0?|stats
+toughness=1|Does your card have a toughness of 1?|stats
+toughness=2|Does your card have a toughness of 2?|stats
+toughness=3|Does your card have a toughness of 3?|stats
+toughness=4|Does your card have a toughness of 4?|stats
+toughness=5|Does your card have a toughness of 5?|stats
+toughness=6|Does your card have a toughness of 6?|stats
+toughness=7|Does your card have a toughness of 7?|stats
+inset:mh3|Was your card printed in Modern Horizons 3?|set
+inset:mh2|Was your card printed in Modern Horizons 2?|set
+inset:mh1|Was your card printed in Modern Horizons 1?|set
+inset:tmp|Was your card printed in Tempest?|set
+inset:mmq|Was your card printed in Mercadian Masques?|set
+inset:lea|Was your card printed in Alpha?|set
+inset:tsp|Was your card printed in Time Spiral?|set
+inset:cmr|Was your card printed in Commander Legends?|set
+inset:lci|Was your card printed in Lost Caverns of Ixalan?|set
+inset:soi|Was your card printed in Shadows Over Innistrad?|set
+inset:emn|Was your card printed in Eldritch Moon?|set
+inset:zen|Was your card printed in Zendikar?|set
+inset:scg|Was your card printed in Scourge?|set
+inset:ima|Was your card printed in Iconic Masters?|set
+inset:aer|Was your card printed in Aether Revolt?|set
+inset:wwk|Was your card printed in Worldwake?|set
+inset:leg|Was your card printed in Legends?|set
+inset:drk|Was your card printed in The Dark?|set
+inset:fut|Was your card printed in Future Sight?|set
+inset:bro|Was your card printed in The Brothers' War?|set
+inset:mom|Was your card printed in March of the Machine?|set
+inset:con|Was your card printed in Conflux?|set
+inset:rav|Was your card printed in Ravnica: City of Guilds?|set
+inset:dis|Was your card printed in Dissension?|set
+inset:gpt|Was your card printed in Guildpact?|set
+inset:vis|Was your card printed in Visions?|set
+inset:uma|Was your card printed in Ultimate Masters?|set
+firstprintyear<2010|Was your card first printed before 2010?|date
+firstprintyear<2000|Was your card first printed before 2000?|date
+firstprintyear<2020|Was your card first printed before 2020?|date
