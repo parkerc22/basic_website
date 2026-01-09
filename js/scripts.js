@@ -1,7 +1,9 @@
 import jsonData from '../card_data.json' with { type: 'json' };
 //1. load card information^^^ and html elements
 let queryRaw;
-
+let queries = [];
+let prompts = [];
+let qtypes = [];
 fetch('./queries.txt')
   .then(response => {
     if (!response.ok) {
@@ -11,19 +13,24 @@ fetch('./queries.txt')
   })
   .then(text => {
     queryRaw = text; // Assign the result to the variable
-    console.log("Inside .then(): Data assigned to variable.");
     // Data is available here immediately
+    
+    queryRaw.split("\n").forEach((line, idx) => {
+        queries.push(line.split('|')[0]);
+        prompts.push(line.split('|')[1]);
+        qtypes.push(line.split('|')[2]);
+    });  
   })
   .catch(error => {
     console.error('Fetch error:', error);
   });
 
+
+
 async function startGame() {
     //2. load queries (this really should be a json
-    console.log("starting...");
     const numLeft = document.getElementById("numLeft");
     numLeft.textContent = "Number of cards left: 32635";
-
     let queries = [];
     let prompts = [];
     let qtypes = [];
@@ -31,12 +38,16 @@ async function startGame() {
         queries.push(line.split('|')[0]);
         prompts.push(line.split('|')[1]);
         qtypes.push(line.split('|')[2]);
-    });
+    });  
+    
 
     let prev_qtype = "";
 
     //3. populate possible cards (all of them)
     let possibleCards = Object.keys(jsonData);
+    const linkElement = document.getElementById("scryfallLink");
+    linkElement.href = "https://scryfall.com";
+    linkElement.textContent = "";
     //4. initiate game loop
     while (true) {
         const pghElement = document.getElementById("myParagraph");
@@ -90,7 +101,10 @@ async function startGame() {
 
         //11. check if the game is done
         if (possibleCards.length == 1) {
-            pghElement.textContent = "Your card is " + possibleCards[0];
+            pghElement.textContent = "Your card is ";
+            const linkElement = document.getElementById("scryfallLink");
+            linkElement.href = "https://scryfall.com/search?q=%22" + possibleCards[0] + "%22";
+            linkElement.textContent = possibleCards[0];
             break;
         }
     }

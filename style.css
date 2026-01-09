@@ -18,6 +18,11 @@ h1 {
   font-size: 16px;
   cursor: pointer;
 }
+.inline-item {
+  display: inline-block;
+  /* Optional: adds space between the items */
+  margin-right: 0px;
+}
 .yes {
     background-color:green;
 }
