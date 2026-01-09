@@ -25,8 +25,6 @@ fetch('./queries.txt')
     console.error('Fetch error:', error);
   });
 
-
-
 async function startGame() {
     //2. load queries (this really should be a json
     const numLeft = document.getElementById("numLeft");
@@ -138,8 +136,8 @@ button1.addEventListener("click", startGame);
 
 function weightedRandom(weights, items, prevType, qtypes) {
     let i;
-    for (i = 1; i < weights.length; i++) {
-        if (qtypes[i]===prevType) {
+    for (i = 0; i < weights.length; i++) {
+        if (qtypes[items[i]]===prevType) {
             weights[i] *= 0.15;
         }
     }
