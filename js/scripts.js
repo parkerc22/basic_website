@@ -38,9 +38,9 @@ async function startGame() {
         const pghElement = document.getElementById("myParagraph");
         const numLeft = document.getElementById("numLeft");
 
-        //6. Determine the ideal query
-        let best_min = 0;
-        let best_idx = 0;
+        //6. Determine the best 5 queries
+        let best_min = [];
+        let best_idx = [];
         for (let i = 0; i < queries.length; i++) {
             let one_ct = 0;
             for (let c = 0; c < possibleCards.length; c++) {
@@ -49,30 +49,37 @@ async function startGame() {
                 }
             }
             let current_min = Math.min(one_ct, possibleCards.length - one_ct);
-            if (current_min > best_min) {
-                best_min = current_min;
-                best_idx = i;
+            if ((best_min.length <= 5) || (current_min > Math.min(...best_min))) {
+                best_min.push(current_min);
+                best_idx.push(i);
+                // check if the arrays are big enough for us to cut the last element from
+                if (best_min.length == 6) {
+                    // find the min element idx
+                    let r = best_min.indexOf(Math.min(...best_min));
+                    best_min.splice(r, 1);
+                    best_idx.splice(r, 1);
+                }
             }
         }
+
         //7. check if unable to distinguish
-        if (best_min == 0) {
+        if (Math.max(...best_min) == 0) {
             pghElement.textContent = "Unable to distinguish between " + possibleCards.join();
             break;
         }
 
-        //8. Print chosen query
-        console.log(prompts[best_idx]);
-        pghElement.textContent = prompts[best_idx];
+        //8. Randomly choose a query and print it
+        let final_idx = weightedRandom(best_min, best_idx);
+        pghElement.textContent = prompts[final_idx];
 
         //9. Receive user input
         let input = await getInput("yesButton", "noButton");
-        console.log(input)
         let num = 0;
         if (input == "yesButton") {
             num = 1;
         }
         //10. update possible cards list
-        possibleCards = possibleCards.filter(card => jsonData[card][best_idx] == num);
+        possibleCards = possibleCards.filter(card => jsonData[card][final_idx] == num);
         numLeft.textContent = "Number of cards left: " + possibleCards.length;
 
         //11. check if the game is done
@@ -108,3 +115,15 @@ const button1 = document.getElementById("startGame");
 
 // Add a 'click' event listener to the button
 button1.addEventListener("click", startGame);
+
+function weightedRandom(weights, items) {
+    let i;
+    for (i = 1; i < weights.length; i++)
+        weights[i] += weights[i - 1];
+    
+    let random = Math.random() * weights[weights.length - 1];
+    for (i = 0; i < weights.length; i++)
+        if (weights[i] > random)
+            break;
+    return items[i];
+}
