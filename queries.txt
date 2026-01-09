@@ -42,6 +42,8 @@ ci:r|Does your card's color identity include red?
 ci:g|Does your card's color identity include green?
 OR$c:r$c:u|Is your card red or blue at all?
 OR$c:g$c:b|Is your card green or black at all?
+OR$ci:w$ci:u|Does your card's color identity include blue or white at all?
+OR$ci:r$ci:g|Does your card's color identity include red or green at all?
 legal:legacy|Is your card legal in Legacy?
 legal:pauper|Is your card legal in Pauper?
 legal:modern|Is your card legal in Modern?
@@ -55,6 +57,11 @@ t:elemental|Is your card an Elemental?
 t:human|Is your card a Human?
 t:wizard|Is your card a Wizard?
 t:equipment|Is your card an Equipment?
+t:tower|Is your card a Tower?
+t:power-plant|Is your card a Power-Plant?
+t:desert|Is your card a Desert?
+t:aura|Is your card an Aura?
+t:saga|Is your card a Saga?
 o:"draw"|Does your card mention the word "draw"?
 o:"whenever"|Does your card mention the word "whenever"?
 o:"exile"|Does your card mention exile?
@@ -73,14 +80,29 @@ keywords:deathtouch|Does your card have deathtouch?
 keywords:menace|Does your card have menace?
 keywords:suspend|Does your card have suspend?
 keywords:unearth|Does your card have unearth?
+keywords:echo|Does your card have echo?
+keywords:indestructible|Does your card have indestructible?
+keywords:sweep|Does your card have sweep?
 o:"pay 1 life"|Could your card cause you to pay exactly 1 life?
 o:"gain 1 life"|Could your card cause you to gain exactly 1 life?
 o:"target opponent"|Could your card target an opponent?
 o:"+1/+1"|Does your card mention +1/+1?
+o:"-1/-1"|Does your card mention -1/-1?
+o:"-2/-2"|Does your card mention -2/-2?
 o:"add {C}"|Could this card add colorless mana to your mana pool?
 o:"eldrazi"|Does your card mention Eldrazi at all?
+o:"zombie"|Does your card mention Zombies at all?
+o:"goblin"|Does your card mention Goblins at all?
+o:"sliver"|Does your card mention Slivers at all?
+o:"until end of turn"|Does your card do something 'until end of turn'?
 o:"this land enters tapped"|Is your card a land card that could enter tapped?
+o:"When this creature enters"|Is your card a creature card with an ETB?
 keywords:cumulative upkeep|Does your card have Cumulative upkeep?
+keywords:proliferate|Does your card have Proliferate?
+keywords:bolster|Does your card have Bolster?
+o:"scry 1"|Does your card mention "scry 1"?
+o:"counter"|Does your card mention "counter" at all?
+o:"sacrifice a creature"|Could your card cause you to sacrifice exactly one creature?
 power=0|Does your card have a power of 0?
 power=1|Does your card have a power of 1?
 power=2|Does your card have a power of 2?
@@ -118,6 +140,12 @@ inset:drk|Was your card printed in The Dark?
 inset:fut|Was your card printed in Future Sight?
 inset:bro|Was your card printed in The Brothers' War?
 inset:mom|Was your card printed in March of the Machine?
+inset:con|Was your card printed in Conflux?
+inset:rav|Was your card printed in Ravnica: City of Guilds?
+inset:dis|Was your card printed in Dissension?
+inset:gpt|Was your card printed in Guildpact?
+inset:vis|Was your card printed in Visions?
+inset:uma|Was your card printed in Ultimate Masters?
 firstprintyear<2010|Was your card first printed before 2010?
 firstprintyear<2000|Was your card first printed before 2000?
 firstprintyear<2020|Was your card first printed before 2020?
