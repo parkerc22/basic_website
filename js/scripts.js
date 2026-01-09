@@ -23,7 +23,7 @@ async function startGame() {
     console.log("starting...");
     console.log("running...");
     const numLeft = document.getElementById("numLeft");
-    numLeft.textContent = "Number of cards left: 36036";
+    numLeft.textContent = "Number of cards left: 35205";
 
     let queries = [];
     let prompts = [];
