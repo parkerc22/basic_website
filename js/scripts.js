@@ -2,7 +2,7 @@ import jsonData from '../card_data.json' with { type: 'json' };
 //1. load card information^^^ and html elements
 let queryRaw;
 
-fetch('js/queries.txt')
+fetch('./queries.txt')
   .then(response => {
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
