@@ -5,6 +5,7 @@ t:creature|Is your card a creature?
 t:land|Is your card a land?
 t:artifact|Is your card an artifact?
 t:legendary|Is your card legendary?
+t:conspiracy|Is your card a Conspiracy?
 t:snow|Is your card snow?
 t:locus|Is your card a locus?
 mv=0|Does your card have a mana value of 0?
@@ -38,7 +39,14 @@ ci:u|Does your card's color identity include blue?
 ci:b|Does your card's color identity include black?
 ci:r|Does your card's color identity include red?
 ci:g|Does your card's color identity include green?
+OR$c:r$c:u|Is your card red or blue at all?
+OR$c:g$c:b|Is your card green or black at all?
 legal:legacy|Is your card legal in Legacy?
+legal:pauper|Is your card legal in Pauper?
+legal:modern|Is your card legal in Modern?
+legal:pioneer|Is your card legal in Pioneer?
+colors=5|Is your card all five colors?
+colors=3|Does your card have exactly three colors?
 colors=2|Does your card have exactly two colors?
 colors=1|Does your card have exactly one color?
 colors=0|Is your card colorless?
@@ -55,7 +63,17 @@ OR$mv=1$mv=2|Does your card have a mana value of 1 or 2?
 AND$t:legendary$t:creature|Is your card a legendary creature?
 keywords:haste|Does your card have haste?
 keywords:lifelink|Does your card have lifelink?
+keywords:flying|Does your card have flying?
+keywords:trample|Does your card have trample?
+keywords:deathtouch|Does your card have deathtouch?
+keywords:menace|Does your card have menace?
+keywords:suspend|Does your card have suspend?
+o:"pay 1 life"|Could your card cause you to pay exactly 1 life?
+o:"gain 1 life"|Could your card cause you to gain exactly 1 life?
+o:"target opponent"|Could your card target an opponent?
 o:"+1/+1"|Does your card mention +1/+1?
+o:"add {C}"|Could this card add colorless mana to your mana pool?
+o:"eldrazi"|Does your card mention Eldrazi at all?
 power=0|Does your card have a power of 0?
 power=1|Does your card have a power of 1?
 power=2|Does your card have a power of 2?
@@ -83,6 +101,11 @@ inset:cmr|Was your card printed in Commander Legends?
 inset:lci|Was your card printed in Lost Caverns of Ixalan?
 inset:soi|Was your card printed in Shadows Over Innistrad?
 inset:emn|Was your card printed in Eldritch Moon?
+inset:zen|Was your card printed in Zendikar?
+inset:scg|Was your card printed in Scourge?
+inset:ima|Was your card printed in Iconic Masters?
+inset:aer|Was your card printed in Aether Revolt?
+inset:wwk|Was your card printed in Worldwake?
 firstprintyear<2010|Was your card first printed before 2010?
 firstprintyear<2000|Was your card first printed before 2000?
 firstprintyear<2020|Was your card first printed before 2020?
