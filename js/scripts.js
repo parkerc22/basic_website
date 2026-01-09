@@ -21,7 +21,6 @@ fetch('js/queries.txt')
 async function startGame() {
     //2. load queries (this really should be a json
     console.log("starting...");
-    console.log("running...");
     const numLeft = document.getElementById("numLeft");
     numLeft.textContent = "Number of cards left: 35205";
 
