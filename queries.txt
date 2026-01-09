@@ -71,6 +71,8 @@ o:"tap target"|Could your card tap a permanent?|oracle
 o:"discard"|Does your card mention discard?|oracle
 OR$t:planeswalker$t:creature$t:battle$t:land$t:enchantment$t:artifact|Is your card a permanent?|type
 OR$mv=1$mv=2|Does your card have a mana value of 1 or 2?|mv
+OR$o:"target creature you control"$o:"target creatures you control"|Could this card target one or more creatures you control?|oracle
+OR$o:"search your library for"$o:"searches their library for"$o:"search their library for"|Could this card cause a player to search their library?|oracle
 AND$t:legendary$t:creature|Is your card a legendary creature?|type
 keywords:haste|Does your card have haste?|oracle
 keywords:lifelink|Does your card have lifelink?|oracle
@@ -83,6 +85,8 @@ keywords:unearth|Does your card have unearth?|oracle
 keywords:echo|Does your card have echo?|oracle
 keywords:indestructible|Does your card have indestructible?|oracle
 keywords:sweep|Does your card have sweep?|oracle
+keywords:flashback|Does your card have flashback?|oracle
+keywords:convoke|Does your card have convoke?|oracle
 o:"pay 1 life"|Could your card cause you to pay exactly 1 life?|oracle
 o:"gain 1 life"|Could your card cause you to gain exactly 1 life?|oracle
 o:"target opponent"|Could your card target an opponent?|oracle
@@ -103,6 +107,7 @@ keywords:bolster|Does your card have Bolster?|oracle
 o:"scry 1"|Does your card mention "scry 1"?|oracle
 o:"counter"|Does your card mention "counter" at all?|oracle
 o:"sacrifice a creature"|Could your card cause you to sacrifice exactly one creature?|oracle
+OR$o:"d6"$o:"six-sided"|Does your card mention d6 or six-sided dice?|oracle
 power=0|Does your card have a power of 0?|stats
 power=1|Does your card have a power of 1?|stats
 power=2|Does your card have a power of 2?|stats
@@ -140,11 +145,13 @@ inset:drk|Was your card printed in The Dark?|set
 inset:fut|Was your card printed in Future Sight?|set
 inset:bro|Was your card printed in The Brothers' War?|set
 inset:mom|Was your card printed in March of the Machine?|set
+inset:nph|Was your card printed in New Phyrexia?|set
 inset:con|Was your card printed in Conflux?|set
 inset:rav|Was your card printed in Ravnica: City of Guilds?|set
 inset:dis|Was your card printed in Dissension?|set
 inset:gpt|Was your card printed in Guildpact?|set
 inset:vis|Was your card printed in Visions?|set
+inset:isd|Was your card printed in Innistrad?|set
 inset:uma|Was your card printed in Ultimate Masters?|set
 firstprintyear<2010|Was your card first printed before 2010?|date
 firstprintyear<2000|Was your card first printed before 2000?|date
